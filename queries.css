@@ -2,11 +2,13 @@
 
 body{
   background-color: gray;
+  padding: 20px;
 }
 
 nav {
   position: relative;
   transition-duration: .5s;
+  max-width: 50%
 }
 
 ul {
@@ -36,7 +38,9 @@ i.fa-reorder {
 @media only screen and (max-width: 1024px) {
   body {
     background-color: yellow;
-    padding: 20px;
+  }
+  nav {
+    max-width: 100%;
   }
   li {
     color:black;
