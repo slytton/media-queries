@@ -1,0 +1,110 @@
+
+
+body{
+  background-color: gray;
+}
+
+nav {
+  position: relative;
+  transition-duration: .5s;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: flex-end;
+  height: 40px;
+}
+
+li {
+  display: inline;
+  padding-top: 30px;
+  color: white;
+}
+
+li:hover {
+  border-top: 5px solid green;
+  cursor: pointer;
+}
+
+i.fa-reorder {
+  display:none;
+}
+
+/*Tablet - Portrait*/
+@media only screen and (max-width: 1024px) {
+  body {
+    background-color: yellow;
+    padding: 20px;
+  }
+  li {
+    color:black;
+  }
+  ul {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: blue;
+  }
+
+  li {
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: orange;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    background-color: green;
+  }
+
+  .slideUp {
+    position: relative;
+    height: auto;
+    transition-duration: .5s;
+    display:block;
+  }
+
+  nav {
+    background-color: rgb(175, 175, 175);
+    border:1px solid rgb(122, 122, 122);
+  }
+
+  ul {
+    padding: 10px 10px 10px 10px;
+    display: none;
+    margin: 0;
+    text-align: center;
+  }
+
+  li {
+    display: block;
+    padding: 10px;
+    border-top: 1px solid black;
+  }
+
+  li:hover {
+    background-color: rgb(194, 194, 194)
+  }
+
+  i.fa-reorder {
+    display:block;
+    padding:10px;
+    text-align: right;
+  }
+}
+
+@media only screen and (max-width: 320) {
+  body {
+    background-color: white;
+  }
+}
